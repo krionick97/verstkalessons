@@ -5,14 +5,184 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Уроки по веб-верстки</title>
-</head>
+	<link href="style.css" rel="stylesheet">
+	<!-- <link rel="stylesheet" href="https://fonticons-free-fonticons.netdna-ssl.com/kits/349cfdf6/publications/85542/woff2.css" media="all"> -->
+	<!-- <link rel="stylesheet" href="css/font-awesome.min.css"> -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+	<title>LEO SHOP</title>
+	</head>
 
 <body>
+	<header class="header">
+		<section class="header_blue-line">
+			<div class="header_blue-line__settings">
+				<form action="" >
+					<label for="Lang" class="Label-Lang" >Language:</label>
+					<select name="Lang" class="Lang">
+						<option value="">English</option>
+						<option value="">Russian</option>
+					</select>
+					<label for="Curr" class="Label-Cur" >Currency</label>
+					<select name="Curr" class="Cur">
+						<option value="">USD</option>
+						<option value="">RUR</option>
+					</select>
+				</form>
+			</div>			
+				<nav class="header_blue-line__menu">
+					<div class="header_blue-line__menu-block">
+						<a href="page/1.html">Account</a> | 
+						<a href="page/2.html">Wishlist</a> |
+						<a href="page/2.html">Checkout</a> | 
+						<a href="page/2.html">Log In</a> | 
+						<a href="page/2.html">Sign Up</a>
+					</div>					
+				</nav>			
+		</section>		
+		<section class="header_main">
+			<section class="header_logo">
+				<h1 class="header_main__Logo-title">Leo Shop</h1>
+			</section>
+			<nav class="header_main__menu">			
+				<div class="header_main__menu-block">
+					<a href="page/1.html">Home</a>
+					<a href="page/1.html">Women</a>
+					<a href="page/1.html">Men</a>
+					<a href="page/1.html">Other</a>
+					<a href="page/1.html">Purchase</a>
+				</div>												
+			</nav>
+			<div class="header_main__search">
+				<form>
+					<input type="search" name="q" placeholder="Search...">					
+					<button type="submit" value="">
+						<i class="fas fa-search"></i>
+					</button>
+				</form>
+			</div>			
+			<form action="page/1.html">
+				<button class="header_main__marker-but">
+					<img src="img/marker.png" alt="marker">
+				</button>
+			</form>
+			<form action="page/1.html">
+				<button class="header_main__cart-but">
+					<img src="img/cart.png" alt="cart">
+				</button>
+			</form>
+			<nav class="cart-nav">
+				<a href="#">Cart (0)</a>
+			</nav>
+		</section>
+		<section class="header_slider"></section>
+	</header>
 
-	<h1>Привет, меня зовут Влад!</h1>
-	<p>Я учусь верстке</p>
+	<main>
+	<section class="catalog">
+		<h2>Featured Products</h2>
+		<section class="catalog-items">
+				<article class="catalog-item">
+					<div class="catalog-item-label catalog-item-label__new">
+						New
+					</div>
+					<div class="catalog-item-descr">
+						<img src="" alt="">
+						<p></p>
+					</div>
+					<button class="catalog-item-button">
+						Положить в корзину
+					</button>
+				</article>
+	
+				<article class="catalog-item">
+						<div class="catalog-item-label catalog-item-label__sale">
+							Sale
+						</div>
+						<div class="catalog-item-descr">
+							<img src="" alt="">
+							<p></p>
+						</div>
+						<button class="catalog-item-button">
+							Положить в корзину
+						</button>
+					</article>
+		</section>
+		<h2>Stuff Pick</h2>
+	</section>
+	<section class="sidebar">
+		<section class="sidebar-banner"></section>
+		<section class="sidebar-subscribe">
+			<form action="/subscribe/">
+				<input type="text" name="e-mail"/>
+				<input type="submit"/ value="Subscribe"/>
+			</form>
+		</section>
+	</section>
+	</main>
 
+	<footer class="footer">
+		<section class="footer-line">
+			<section class="footer-line-free-shipping">
+				<img src="img/Ship_ic.png" alt="Ship_ic">
+				<h2>Free shipping on orders over $100</h2>
+			</section>
+			<section class="footer-line-call-us">
+				<img src="img/Tel_ic.png" alt="Tel_ic">
+				<h2>Сall us! toll free- 409-8888-0099</h2>
+			</section>
+		</section>
+		<section class="footer-menu">
+			<section class="footer-menu-contacts">
+				<h3>Contact Us</h3>
+				<p>Leo Store<br> 
+					Leopards media<br>
+					KVM Rpad, 4590GH<br>
+					<a href="tel:+148988880099">+1 489-8888-0099</a><br>
+					<a href="mailto:mail@email.com">mail@email.com</a>
+				</p>
+				<a href="https://plus.google.com" target="_blank">					
+					<img src="img/g-plus_ic.png" alt="g-plus">
+				</a>				
+				<a href="https://www.linkedin.com" target="_blank">
+					<img src="img/in_ic.png" alt="linkedin">
+				</a>
+				<a href="http://www.rssboard.org/" target="_blank">
+					<img src="img/Group 1.png" alt="RSS">
+				</a>
+				<a href="https://www.facebook.com/" target="_blank">
+					<img src="img/Facebook_ic.png" alt="Facebook">
+				</a>				
+			</section>
+			<section class="footer-menu-information">
+				<h3>Information</h3>
+				<ul>
+					<li>Sed ultrices purus non.</li>
+					<li>sodales sodales.</li>
+					<li>Curabitur pretium dui vitae.</li>
+					<li>Donec gravida mi in nisl </li>
+					<li>faucibus leo condimentum.</li>
+					<li>Donec et lorem suscipit.</li>
+				</ul>
+			</section>
+			<section class="footer-menu-from-twitter">
+				<div><img src="img/Twitter_ic.png" alt="Twitter">
+					<p>Lorem ipsum dolor sit, <br> 
+						amet consectetur adipisicing elit. <br> 
+						Ullam quam debitis iure distinctio <br> 
+						optio alias, voluptas doloribus.
+					</p>				
+				</div>
+				<div><img src="img/Twitter_ic.png" alt="Twitter">
+					<p>Lorem ipsum dolor sit, <br> 
+						amet consectetur adipisicing elit. <br> 
+						Ullam quam debitis iure distinctio <br> 
+						optio alias, voluptas doloribus.
+					</p>				
+				</div>
+			</section>
+		</section>
+		<section class="footer-copyright"></section>
+	</footer>
 </body>
 
 </html>
